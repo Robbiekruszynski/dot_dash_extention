@@ -14,73 +14,122 @@
         padding:0;
         width:384px;
       }
-      h1{
+      h1 {
         font-family:'Menlo', monspace;
         font-size:22px;
         font-weight:400l
         margin:0;
         color:lightgrey;
       }
-      a:link a:visited{
+
+      a:link a:visited {
         color:black;
         outline:0;
         text-decoration:none;
       }
 
-      img{
+      img {
         width:30px;
       }
 
-      .modal-header{
+      .modal-header {
         aline-items:center;
         border-bottom: 0.5px solid #dadada;
       }
 
-      .modal-content{
+      .modal-content {
         padding:0 22px;
       }
 
-      .modal-icons{
+      .modal-icons {
         border-top:0.5px solid #dadada;
         height:50px;
         width:100%;
       }
-      
+
+      .logo {
+        padding: 16px
+      }
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right:12px;
+      }
+
+      .version {
+        color: #444;
+        font-size:12px;
+      }
+
+      .flex-container {
+        display:flex;
+        justifiy-content: space-between;
+        padding: 10px, 20px;
+      }
+
+      .flex {
+        opacity:1;
+        transition: opacity 0.2s ease-in-out;
+        width:120px;
+      }
+
+      .flex:hover{
+        opacity:0.4;
+      }
+
+      .flex .fa {
+        font-size:40px;
+        color: black;
+      }
+
       </style>
   </head>
   <body>
     <div class="modal-header">
       <h1 class="logo">
         <img src="img/rk_logo.png" alt="rk logo" class="logo-icon"> Dot Dash Launcher
-        <span class="version">(1.0.0 beta)</span>
+        <span class="version">(1.0.0)</span>
       </h1>
     </div>
     <div class="modal-content">
       <p>Quick access to personal interests</p>
+    </div>
+      <div class="modal-icons">
+        <div class="flex-container">
+          <div class="flex">
+            <a href="https://robbiekruszynski.com" target="_blank">
+              <i class="fa fa-globe"></i>
+          </div>
+
+          <div class="flex">
+            <a href="https://www.instagram.com/_wave_dash/" target="_blank">
+              <i class="fa fa-instagram"></i>
+          </div>
+
+          <div class="flex">
+            <a href="https://www.facebook.com/robbl3s?ref=bookmarks" target="_blank">
+              <i class="fa fa-facebook"></i>
+          </div>
+
+          <div class="flex">
+            <a href="https://github.com/Robbiekruszynski" target="_blank">
+              <i class="fa fa-github"></i>
+          </div>
+
+          <div class="flex">
+            <a href="https://www.linkedin.com/in/robbie-k/" target="_blank">
+              <i class="fa fa-linkedin"></i>
+          </div>
+
+          <div class="flex">
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="fa fa-youtube"></i>
+          </div>
       </div>
-      <div class="flex">
-        <a href="https://robbiekruszynski.com" target="_blank">
-          <i class="fa fa-globe"></i>
-      </div>
-      <div class="flex">
-        <a href="https://www.instagram.com/_wave_dash/" target="_blank">
-          <i class="fa fa-instagram"></i>
-      </div>
-      <div class="flex">
-        <a href="https://www.facebook.com/robbl3s?ref=bookmarks" target="_blank">
-          <i class="fa fa-facebook"></i>
-      </div>
-      <div class="flex">
-        <a href="https://github.com/Robbiekruszynski" target="_blank">
-          <i class="fa fa-github"></i>
-      </div>
-      <div class="flex">
-        <a href="https://www.linkedin.com/in/robbie-k/" target="_blank">
-          <i class="fa fa-linkedin"></i>
-      </div>
-      <div class="flex">
-        <a href="https://www.youtube.com" target="_blank">
-          <i class="fa fa-youtube"></i>
-      </div>
+    </div>
+
+    <script src="popup.js" type="text/javascript">
+
+    </script>
   </body>
 </html>
